@@ -1,0 +1,10 @@
+# Install PyTorch with CUDA first, following https://pytorch.org (tested with an RTX 4060, 8 GB).
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+pillow>=10.0
+matplotlib>=3.7
+scikit-learn>=1.3
+timm>=0.9.16       # DINOv2 and ViT backbones
+imagehash>=4.3     # perceptual hashes for the overlap audit
+ipykernel>=6.0

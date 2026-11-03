@@ -1,0 +1,220 @@
+[
+  {
+    "dataset":"RFMiD1.0",
+    "split":"train",
+    "file":"a_RFMiD_Training_Labels.csv",
+    "encoding":"utf-8-sig",
+    "headers_stripped":0,
+    "empty_columns_dropped":[
+
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":1920,
+    "image_files":1920,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+
+    ],
+    "images_without_label":[
+
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":1920,
+    "n_disease_classes":45,
+    "flag_columns":[
+      "Disease_Risk"
+    ]
+  },
+  {
+    "dataset":"RFMiD1.0",
+    "split":"val",
+    "file":"b_RFMiD_Validation_Labels.csv",
+    "encoding":"utf-8-sig",
+    "headers_stripped":0,
+    "empty_columns_dropped":[
+
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":640,
+    "image_files":640,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+
+    ],
+    "images_without_label":[
+
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":640,
+    "n_disease_classes":45,
+    "flag_columns":[
+      "Disease_Risk"
+    ]
+  },
+  {
+    "dataset":"RFMiD1.0",
+    "split":"test",
+    "file":"c_RFMiD_Testing_Labels.csv",
+    "encoding":"utf-8-sig",
+    "headers_stripped":0,
+    "empty_columns_dropped":[
+
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":640,
+    "image_files":640,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+
+    ],
+    "images_without_label":[
+
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":640,
+    "n_disease_classes":45,
+    "flag_columns":[
+      "Disease_Risk"
+    ]
+  },
+  {
+    "dataset":"RFMiD2.0",
+    "split":"train",
+    "file":"RFMiD_2_Training_labels.csv",
+    "encoding":"cp1252",
+    "headers_stripped":1,
+    "empty_columns_dropped":[
+      "Unnamed: 52"
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":509,
+    "image_files":509,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+      "89",
+      "216"
+    ],
+    "images_without_label":[
+      "79",
+      "222"
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":507,
+    "n_disease_classes":50,
+    "flag_columns":[
+      "WNL"
+    ]
+  },
+  {
+    "dataset":"RFMiD2.0",
+    "split":"val",
+    "file":"RFMiD_2_Validation_labels.csv",
+    "encoding":"cp1252",
+    "headers_stripped":1,
+    "empty_columns_dropped":[
+      "Unnamed: 52"
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":177,
+    "image_files":177,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+
+    ],
+    "images_without_label":[
+
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":177,
+    "n_disease_classes":50,
+    "flag_columns":[
+      "WNL"
+    ]
+  },
+  {
+    "dataset":"RFMiD2.0",
+    "split":"test",
+    "file":"RFMiD_2_Testing_labels.csv",
+    "encoding":"cp1252",
+    "headers_stripped":1,
+    "empty_columns_dropped":[
+      "Unnamed: 52"
+    ],
+    "empty_rows_dropped":0,
+    "label_rows":174,
+    "image_files":174,
+    "duplicate_label_ids":[
+
+    ],
+    "duplicate_image_stems":[
+
+    ],
+    "labels_without_image":[
+      "151",
+      "191",
+      "405",
+      "490"
+    ],
+    "images_without_label":[
+      "251",
+      "291",
+      "404",
+      "489"
+    ],
+    "missing_label_values_filled_0":0,
+    "unparsable_label_values":0,
+    "non_binary_columns":[
+
+    ],
+    "kept":170,
+    "n_disease_classes":50,
+    "flag_columns":[
+      "WNL"
+    ]
+  }
+]

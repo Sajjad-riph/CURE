@@ -1,0 +1,1289 @@
+{
+ "notebook": "13_cat_baseline",
+ "quick_mode": false,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "n_boot": 300,
+ "means": {
+  "Legacy": {
+   "mAP_shared": 0.183,
+   "mAP_all": 0.143,
+   "NFR+_%": 0.0,
+   "NFR-_%": 0.0,
+   "img_risk_%": 0.0,
+   "CF1_%": 13.07,
+   "OF1_%": 4.832,
+   "HL_%": 31.568,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 0.0,
+   "sd_NFR-": 0.0
+  },
+  "Select": {
+   "mAP_shared": 0.331,
+   "mAP_all": 0.33,
+   "NFR+_%": 10.912,
+   "NFR-_%": 4.116,
+   "img_risk_%": 34.305,
+   "CF1_%": 25.676,
+   "OF1_%": 23.267,
+   "HL_%": 7.446,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.294,
+   "sd_NFR-": 0.35
+  },
+  "FT": {
+   "mAP_shared": 0.35,
+   "mAP_all": 0.346,
+   "NFR+_%": 11.466,
+   "NFR-_%": 6.72,
+   "img_risk_%": 36.026,
+   "CF1_%": 25.645,
+   "OF1_%": 20.1,
+   "HL_%": 9.244,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 2.513,
+   "sd_NFR-": 0.745
+  },
+  "FT+CURE10": {
+   "mAP_shared": 0.35,
+   "mAP_all": 0.346,
+   "NFR+_%": 2.941,
+   "NFR-_%": 21.567,
+   "img_risk_%": 8.751,
+   "CF1_%": 18.11,
+   "OF1_%": 13.204,
+   "HL_%": 22.512,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.023,
+   "sd_NFR-": 8.561
+  },
+  "FT+CAT": {
+   "mAP_shared": 0.35,
+   "mAP_all": 0.346,
+   "NFR+_%": 11.296,
+   "NFR-_%": 1.686,
+   "img_risk_%": 35.73,
+   "CF1_%": 29.92,
+   "OF1_%": 35.533,
+   "HL_%": 4.004,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.629,
+   "sd_NFR-": 0.199
+  },
+  "FT+CAT-T": {
+   "mAP_shared": 0.35,
+   "mAP_all": 0.346,
+   "NFR+_%": 11.296,
+   "NFR-_%": 1.536,
+   "img_risk_%": 35.626,
+   "CF1_%": 31.093,
+   "OF1_%": 37.345,
+   "HL_%": 3.789,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.542,
+   "sd_NFR-": 0.124
+  },
+  "KD": {
+   "mAP_shared": 0.363,
+   "mAP_all": 0.361,
+   "NFR+_%": 9.847,
+   "NFR-_%": 6.169,
+   "img_risk_%": 31.432,
+   "CF1_%": 27.149,
+   "OF1_%": 19.638,
+   "HL_%": 9.825,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.677,
+   "sd_NFR-": 0.317
+  },
+  "KD+CURE10": {
+   "mAP_shared": 0.363,
+   "mAP_all": 0.361,
+   "NFR+_%": 2.941,
+   "NFR-_%": 13.917,
+   "img_risk_%": 8.769,
+   "CF1_%": 23.435,
+   "OF1_%": 17.671,
+   "HL_%": 17.323,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 0.965,
+   "sd_NFR-": 12.513
+  },
+  "KD+CAT": {
+   "mAP_shared": 0.363,
+   "mAP_all": 0.361,
+   "NFR+_%": 10.06,
+   "NFR-_%": 1.254,
+   "img_risk_%": 32.14,
+   "CF1_%": 32.727,
+   "OF1_%": 38.277,
+   "HL_%": 3.741,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 0.851,
+   "sd_NFR-": 0.255
+  },
+  "KD+CAT-T": {
+   "mAP_shared": 0.363,
+   "mAP_all": 0.361,
+   "NFR+_%": 10.401,
+   "NFR-_%": 1.173,
+   "img_risk_%": 33.02,
+   "CF1_%": 32.194,
+   "OF1_%": 38.697,
+   "HL_%": 3.624,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.072,
+   "sd_NFR-": 0.224
+  },
+  "FD": {
+   "mAP_shared": 0.362,
+   "mAP_all": 0.359,
+   "NFR+_%": 9.591,
+   "NFR-_%": 6.208,
+   "img_risk_%": 30.317,
+   "CF1_%": 26.872,
+   "OF1_%": 19.872,
+   "HL_%": 9.724,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.172,
+   "sd_NFR-": 0.224
+  },
+  "FD+CURE10": {
+   "mAP_shared": 0.362,
+   "mAP_all": 0.359,
+   "NFR+_%": 2.344,
+   "NFR-_%": 15.203,
+   "img_risk_%": 7.191,
+   "CF1_%": 21.706,
+   "OF1_%": 15.651,
+   "HL_%": 18.414,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 0.322,
+   "sd_NFR-": 9.008
+  },
+  "FD+CAT": {
+   "mAP_shared": 0.362,
+   "mAP_all": 0.359,
+   "NFR+_%": 10.486,
+   "NFR-_%": 1.199,
+   "img_risk_%": 33.352,
+   "CF1_%": 31.386,
+   "OF1_%": 38.278,
+   "HL_%": 3.657,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.452,
+   "sd_NFR-": 0.12
+  },
+  "FD+CAT-T": {
+   "mAP_shared": 0.362,
+   "mAP_all": 0.359,
+   "NFR+_%": 10.443,
+   "NFR-_%": 1.087,
+   "img_risk_%": 33.087,
+   "CF1_%": 31.882,
+   "OF1_%": 39.612,
+   "HL_%": 3.495,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.262,
+   "sd_NFR-": 0.153
+  },
+  "WiSE": {
+   "mAP_shared": 0.329,
+   "mAP_all": 0.317,
+   "NFR+_%": 7.971,
+   "NFR-_%": 5.474,
+   "img_risk_%": 24.761,
+   "CF1_%": 25.257,
+   "OF1_%": 20.245,
+   "HL_%": 9.165,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 1.471,
+   "sd_NFR-": 0.376
+  },
+  "WiSE+CURE10": {
+   "mAP_shared": 0.329,
+   "mAP_all": 0.317,
+   "NFR+_%": 2.856,
+   "NFR-_%": 4.92,
+   "img_risk_%": 8.549,
+   "CF1_%": 22.171,
+   "OF1_%": 18.457,
+   "HL_%": 10.65,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 0.411,
+   "sd_NFR-": 2.648
+  },
+  "WiSE+CAT": {
+   "mAP_shared": 0.329,
+   "mAP_all": 0.317,
+   "NFR+_%": 9.122,
+   "NFR-_%": 1.085,
+   "img_risk_%": 28.339,
+   "CF1_%": 28.182,
+   "OF1_%": 35.671,
+   "HL_%": 3.794,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 1.629,
+   "sd_NFR-": 0.095
+  },
+  "WiSE+CAT-T": {
+   "mAP_shared": 0.329,
+   "mAP_all": 0.317,
+   "NFR+_%": 9.463,
+   "NFR-_%": 0.997,
+   "img_risk_%": 29.283,
+   "CF1_%": 27.592,
+   "OF1_%": 36.119,
+   "HL_%": 3.661,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 2.03,
+   "sd_NFR-": 0.093
+  },
+  "OE": {
+   "mAP_shared": 0.349,
+   "mAP_all": 0.345,
+   "NFR+_%": 7.886,
+   "NFR-_%": 5.548,
+   "img_risk_%": 24.653,
+   "CF1_%": 26.012,
+   "OF1_%": 20.612,
+   "HL_%": 9.225,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 1.437,
+   "sd_NFR-": 0.505
+  },
+  "OE+CURE10": {
+   "mAP_shared": 0.349,
+   "mAP_all": 0.345,
+   "NFR+_%": 2.515,
+   "NFR-_%": 3.492,
+   "img_risk_%": 7.512,
+   "CF1_%": 24.443,
+   "OF1_%": 19.214,
+   "HL_%": 10.428,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 0.749,
+   "sd_NFR-": 3.041
+  },
+  "OE+CAT": {
+   "mAP_shared": 0.349,
+   "mAP_all": 0.345,
+   "NFR+_%": 9.506,
+   "NFR-_%": 1.223,
+   "img_risk_%": 30.074,
+   "CF1_%": 30.533,
+   "OF1_%": 36.868,
+   "HL_%": 3.843,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 1.287,
+   "sd_NFR-": 0.203
+  },
+  "OE+CAT-T": {
+   "mAP_shared": 0.349,
+   "mAP_all": 0.345,
+   "NFR+_%": 9.42,
+   "NFR-_%": 1.095,
+   "img_risk_%": 29.72,
+   "CF1_%": 31.047,
+   "OF1_%": 38.199,
+   "HL_%": 3.641,
+   "regressed_classes_min5": 0.0,
+   "sd_NFR+": 1.229,
+   "sd_NFR-": 0.187
+  },
+  "MPT": {
+   "mAP_shared": 0.365,
+   "mAP_all": 0.359,
+   "NFR+_%": 9.719,
+   "NFR-_%": 5.61,
+   "img_risk_%": 30.803,
+   "CF1_%": 26.605,
+   "OF1_%": 22.108,
+   "HL_%": 8.416,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 0.965,
+   "sd_NFR-": 0.433
+  },
+  "MPT+CURE10": {
+   "mAP_shared": 0.365,
+   "mAP_all": 0.359,
+   "NFR+_%": 3.069,
+   "NFR-_%": 11.489,
+   "img_risk_%": 9.171,
+   "CF1_%": 23.137,
+   "OF1_%": 18.154,
+   "HL_%": 14.795,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 0.712,
+   "sd_NFR-": 6.872
+  },
+  "MPT+CAT": {
+   "mAP_shared": 0.365,
+   "mAP_all": 0.359,
+   "NFR+_%": 10.401,
+   "NFR-_%": 1.275,
+   "img_risk_%": 32.842,
+   "CF1_%": 32.573,
+   "OF1_%": 38.371,
+   "HL_%": 3.67,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.331,
+   "sd_NFR-": 0.019
+  },
+  "MPT+CAT-T": {
+   "mAP_shared": 0.365,
+   "mAP_all": 0.359,
+   "NFR+_%": 10.273,
+   "NFR-_%": 1.199,
+   "img_risk_%": 32.46,
+   "CF1_%": 32.418,
+   "OF1_%": 39.627,
+   "HL_%": 3.524,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.403,
+   "sd_NFR-": 0.014
+  },
+  "RA-LDL": {
+   "mAP_shared": 0.334,
+   "mAP_all": 0.335,
+   "NFR+_%": 10.912,
+   "NFR-_%": 6.72,
+   "img_risk_%": 33.86,
+   "CF1_%": 23.625,
+   "OF1_%": 17.065,
+   "HL_%": 10.422,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.599,
+   "sd_NFR-": 0.257
+  },
+  "RA-LDL+CURE10": {
+   "mAP_shared": 0.334,
+   "mAP_all": 0.335,
+   "NFR+_%": 3.026,
+   "NFR-_%": 10.131,
+   "img_risk_%": 9.337,
+   "CF1_%": 20.624,
+   "OF1_%": 15.819,
+   "HL_%": 14.622,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 0.604,
+   "sd_NFR-": 3.245
+  },
+  "RA-LDL+CAT": {
+   "mAP_shared": 0.334,
+   "mAP_all": 0.335,
+   "NFR+_%": 11.765,
+   "NFR-_%": 1.505,
+   "img_risk_%": 37.065,
+   "CF1_%": 29.611,
+   "OF1_%": 28.581,
+   "HL_%": 5.11,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 0.586,
+   "sd_NFR-": 0.215
+  },
+  "RA-LDL+CAT-T": {
+   "mAP_shared": 0.334,
+   "mAP_all": 0.335,
+   "NFR+_%": 12.148,
+   "NFR-_%": 1.412,
+   "img_risk_%": 38.439,
+   "CF1_%": 29.563,
+   "OF1_%": 28.821,
+   "HL_%": 4.985,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.107,
+   "sd_NFR-": 0.242
+  },
+  "HCP": {
+   "mAP_shared": 0.336,
+   "mAP_all": 0.329,
+   "NFR+_%": 9.378,
+   "NFR-_%": 7.058,
+   "img_risk_%": 29.912,
+   "CF1_%": 26.113,
+   "OF1_%": 19.354,
+   "HL_%": 9.881,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.312,
+   "sd_NFR-": 0.655
+  },
+  "HCP+CURE10": {
+   "mAP_shared": 0.336,
+   "mAP_all": 0.329,
+   "NFR+_%": 3.154,
+   "NFR-_%": 12.796,
+   "img_risk_%": 9.524,
+   "CF1_%": 19.714,
+   "OF1_%": 16.72,
+   "HL_%": 15.744,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.16,
+   "sd_NFR-": 5.05
+  },
+  "HCP+CAT": {
+   "mAP_shared": 0.336,
+   "mAP_all": 0.329,
+   "NFR+_%": 10.955,
+   "NFR-_%": 1.781,
+   "img_risk_%": 34.494,
+   "CF1_%": 29.966,
+   "OF1_%": 36.509,
+   "HL_%": 3.887,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.146,
+   "sd_NFR-": 0.439
+  },
+  "HCP+CAT-T": {
+   "mAP_shared": 0.336,
+   "mAP_all": 0.329,
+   "NFR+_%": 10.571,
+   "NFR-_%": 1.635,
+   "img_risk_%": 33.279,
+   "CF1_%": 30.846,
+   "OF1_%": 38.063,
+   "HL_%": 3.715,
+   "regressed_classes_min5": 0.667,
+   "sd_NFR+": 1.649,
+   "sd_NFR-": 0.464
+  },
+  "RCLP": {
+   "mAP_shared": 0.331,
+   "mAP_all": 0.331,
+   "NFR+_%": 10.145,
+   "NFR-_%": 7.064,
+   "img_risk_%": 31.607,
+   "CF1_%": 25.877,
+   "OF1_%": 19.92,
+   "HL_%": 9.579,
+   "regressed_classes_min5": 1.333,
+   "sd_NFR+": 1.547,
+   "sd_NFR-": 0.725
+  },
+  "RCLP+CURE10": {
+   "mAP_shared": 0.331,
+   "mAP_all": 0.331,
+   "NFR+_%": 2.6,
+   "NFR-_%": 15.618,
+   "img_risk_%": 7.796,
+   "CF1_%": 18.644,
+   "OF1_%": 15.112,
+   "HL_%": 17.85,
+   "regressed_classes_min5": 1.333,
+   "sd_NFR+": 1.072,
+   "sd_NFR-": 1.563
+  },
+  "RCLP+CAT": {
+   "mAP_shared": 0.331,
+   "mAP_all": 0.331,
+   "NFR+_%": 11.381,
+   "NFR-_%": 1.49,
+   "img_risk_%": 36.123,
+   "CF1_%": 29.958,
+   "OF1_%": 36.263,
+   "HL_%": 3.851,
+   "regressed_classes_min5": 1.333,
+   "sd_NFR+": 1.233,
+   "sd_NFR-": 0.124
+  },
+  "RCLP+CAT-T": {
+   "mAP_shared": 0.331,
+   "mAP_all": 0.331,
+   "NFR+_%": 11.552,
+   "NFR-_%": 1.341,
+   "img_risk_%": 36.726,
+   "CF1_%": 29.841,
+   "OF1_%": 37.281,
+   "HL_%": 3.651,
+   "regressed_classes_min5": 1.333,
+   "sd_NFR+": 1.515,
+   "sd_NFR-": 0.114
+  },
+  "CRCL": {
+   "mAP_shared": 0.309,
+   "mAP_all": 0.303,
+   "NFR+_%": 7.928,
+   "NFR-_%": 5.359,
+   "img_risk_%": 24.501,
+   "CF1_%": 24.744,
+   "OF1_%": 21.005,
+   "HL_%": 8.692,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.137,
+   "sd_NFR-": 0.378
+  },
+  "CRCL+CURE10": {
+   "mAP_shared": 0.309,
+   "mAP_all": 0.303,
+   "NFR+_%": 2.558,
+   "NFR-_%": 5.055,
+   "img_risk_%": 7.644,
+   "CF1_%": 21.67,
+   "OF1_%": 17.51,
+   "HL_%": 11.037,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 0.128,
+   "sd_NFR-": 5.421
+  },
+  "CRCL+CAT": {
+   "mAP_shared": 0.309,
+   "mAP_all": 0.303,
+   "NFR+_%": 9.847,
+   "NFR-_%": 1.095,
+   "img_risk_%": 30.88,
+   "CF1_%": 26.819,
+   "OF1_%": 34.404,
+   "HL_%": 3.871,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 1.777,
+   "sd_NFR-": 0.101
+  },
+  "CRCL+CAT-T": {
+   "mAP_shared": 0.309,
+   "mAP_all": 0.303,
+   "NFR+_%": 10.145,
+   "NFR-_%": 0.956,
+   "img_risk_%": 31.71,
+   "CF1_%": 26.875,
+   "OF1_%": 35.873,
+   "HL_%": 3.659,
+   "regressed_classes_min5": 0.333,
+   "sd_NFR+": 2.186,
+   "sd_NFR-": 0.099
+  },
+  "Joint": {
+   "mAP_shared": 0.354,
+   "mAP_all": 0.353,
+   "NFR+_%": 10.23,
+   "NFR-_%": 6.876,
+   "img_risk_%": 32.667,
+   "CF1_%": 26.506,
+   "OF1_%": 20.355,
+   "HL_%": 9.164,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.73,
+   "sd_NFR-": 0.461
+  },
+  "Joint+CURE10": {
+   "mAP_shared": 0.354,
+   "mAP_all": 0.353,
+   "NFR+_%": 2.856,
+   "NFR-_%": 14.102,
+   "img_risk_%": 8.844,
+   "CF1_%": 20.835,
+   "OF1_%": 16.482,
+   "HL_%": 16.586,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 0.656,
+   "sd_NFR-": 1.105
+  },
+  "Joint+CAT": {
+   "mAP_shared": 0.354,
+   "mAP_all": 0.353,
+   "NFR+_%": 10.827,
+   "NFR-_%": 1.629,
+   "img_risk_%": 34.536,
+   "CF1_%": 31.454,
+   "OF1_%": 36.768,
+   "HL_%": 3.804,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.026,
+   "sd_NFR-": 0.132
+  },
+  "Joint+CAT-T": {
+   "mAP_shared": 0.354,
+   "mAP_all": 0.353,
+   "NFR+_%": 11.083,
+   "NFR-_%": 1.568,
+   "img_risk_%": 35.271,
+   "CF1_%": 31.566,
+   "OF1_%": 38.216,
+   "HL_%": 3.629,
+   "regressed_classes_min5": 1.0,
+   "sd_NFR+": 1.482,
+   "sd_NFR-": 0.103
+  }
+ },
+ "gap": {
+  "Select": [
+   2.071,
+   1.463,
+   3.414
+  ],
+  "FT": [
+   4.646,
+   3.722,
+   5.826
+  ],
+  "FT+CURE10": [
+   0.19,
+   -0.426,
+   1.301
+  ],
+  "FT+CAT": [
+   -0.961,
+   -1.694,
+   0.311
+  ],
+  "FT+CAT-T": [
+   -1.212,
+   -2.022,
+   -0.044
+  ],
+  "KD": [
+   2.812,
+   2.01,
+   3.867
+  ],
+  "KD+CURE10": [
+   -2.387,
+   -3.289,
+   -1.108
+  ],
+  "KD+CAT": [
+   -3.239,
+   -4.115,
+   -2.023
+  ],
+  "KD+CAT-T": [
+   -3.197,
+   -4.12,
+   -1.79
+  ],
+  "FD": [
+   2.5,
+   1.743,
+   3.445
+  ],
+  "FD+CURE10": [
+   -2.044,
+   -2.634,
+   -0.846
+  ],
+  "FD+CAT": [
+   -2.86,
+   -3.703,
+   -1.721
+  ],
+  "FD+CAT-T": [
+   -3.232,
+   -4.257,
+   -2.063
+  ],
+  "WiSE": [
+   0.43,
+   0.127,
+   1.268
+  ],
+  "WiSE+CURE10": [
+   -5.768,
+   -6.901,
+   -4.102
+  ],
+  "WiSE+CAT": [
+   -4.693,
+   -5.529,
+   -3.459
+  ],
+  "WiSE+CAT-T": [
+   -4.7,
+   -5.481,
+   -3.336
+  ],
+  "OE": [
+   0.473,
+   0.054,
+   1.351
+  ],
+  "OE+CURE10": [
+   -7.73,
+   -8.862,
+   -6.34
+  ],
+  "OE+CAT": [
+   -4.009,
+   -4.908,
+   -2.713
+  ],
+  "OE+CAT-T": [
+   -4.4,
+   -5.51,
+   -3.141
+  ],
+  "MPT": [
+   2.314,
+   1.443,
+   3.364
+  ],
+  "MPT+CURE10": [
+   -2.094,
+   -3.063,
+   -0.954
+  ],
+  "MPT+CAT": [
+   -2.639,
+   -3.511,
+   -1.404
+  ],
+  "MPT+CAT-T": [
+   -3.144,
+   -4.036,
+   -1.749
+  ],
+  "RA-LDL": [
+   4.188,
+   3.141,
+   5.391
+  ],
+  "RA-LDL+CURE10": [
+   -2.376,
+   -3.295,
+   -1.098
+  ],
+  "RA-LDL+CAT": [
+   -0.81,
+   -1.675,
+   0.624
+  ],
+  "RA-LDL+CAT-T": [
+   -0.629,
+   -1.658,
+   0.796
+  ],
+  "HCP": [
+   2.773,
+   2.066,
+   3.939
+  ],
+  "HCP+CURE10": [
+   -1.156,
+   -1.994,
+   -0.102
+  ],
+  "HCP+CAT": [
+   -1.148,
+   -1.842,
+   0.203
+  ],
+  "HCP+CAT-T": [
+   -1.952,
+   -2.754,
+   -0.278
+  ],
+  "RCLP": [
+   3.538,
+   2.592,
+   4.694
+  ],
+  "RCLP+CURE10": [
+   -0.962,
+   -1.719,
+   0.17
+  ],
+  "RCLP+CAT": [
+   -1.239,
+   -2.003,
+   0.096
+  ],
+  "RCLP+CAT-T": [
+   -1.423,
+   -2.261,
+   -0.256
+  ],
+  "CRCL": [
+   0.298,
+   0.039,
+   1.144
+  ],
+  "CRCL+CURE10": [
+   -7.513,
+   -8.457,
+   -5.784
+  ],
+  "CRCL+CAT": [
+   -3.967,
+   -4.672,
+   -2.627
+  ],
+  "CRCL+CAT-T": [
+   -4.165,
+   -4.904,
+   -2.676
+  ],
+  "Joint": [
+   3.581,
+   2.621,
+   4.835
+  ],
+  "Joint+CURE10": [
+   -0.98,
+   -1.771,
+   0.088
+  ],
+  "Joint+CAT": [
+   -1.516,
+   -2.294,
+   -0.306
+  ],
+  "Joint+CAT-T": [
+   -1.315,
+   -2.299,
+   -0.128
+  ]
+ },
+ "d_NFR+": {
+  "FT+CAT vs FT": [
+   -0.171,
+   -1.007,
+   0.725
+  ],
+  "FT+CURE10 vs FT+CAT": [
+   -8.355,
+   -9.849,
+   -7.091
+  ],
+  "FT+CAT-T vs FT": [
+   -0.171,
+   -1.103,
+   0.684
+  ],
+  "FT+CURE10 vs FT+CAT-T": [
+   -8.355,
+   -9.847,
+   -7.077
+  ],
+  "KD+CAT vs KD": [
+   0.213,
+   -0.474,
+   0.967
+  ],
+  "KD+CURE10 vs KD+CAT": [
+   -7.118,
+   -8.44,
+   -5.734
+  ],
+  "KD+CAT-T vs KD": [
+   0.554,
+   -0.255,
+   1.534
+  ],
+  "KD+CURE10 vs KD+CAT-T": [
+   -7.46,
+   -8.78,
+   -6.108
+  ],
+  "FD+CAT vs FD": [
+   0.895,
+   0.146,
+   1.577
+  ],
+  "FD+CURE10 vs FD+CAT": [
+   -8.142,
+   -9.519,
+   -6.871
+  ],
+  "FD+CAT-T vs FD": [
+   0.853,
+   -0.086,
+   1.699
+  ],
+  "FD+CURE10 vs FD+CAT-T": [
+   -8.099,
+   -9.533,
+   -6.641
+  ],
+  "WiSE+CAT vs WiSE": [
+   1.151,
+   0.253,
+   1.996
+  ],
+  "WiSE+CURE10 vs WiSE+CAT": [
+   -6.266,
+   -7.688,
+   -4.847
+  ],
+  "WiSE+CAT-T vs WiSE": [
+   1.492,
+   0.383,
+   2.444
+  ],
+  "WiSE+CURE10 vs WiSE+CAT-T": [
+   -6.607,
+   -8.037,
+   -5.093
+  ],
+  "OE+CAT vs OE": [
+   1.62,
+   0.803,
+   2.535
+  ],
+  "OE+CURE10 vs OE+CAT": [
+   -6.991,
+   -8.407,
+   -5.69
+  ],
+  "OE+CAT-T vs OE": [
+   1.535,
+   0.629,
+   2.441
+  ],
+  "OE+CURE10 vs OE+CAT-T": [
+   -6.905,
+   -8.356,
+   -5.464
+  ],
+  "MPT+CAT vs MPT": [
+   0.682,
+   0.063,
+   1.355
+  ],
+  "MPT+CURE10 vs MPT+CAT": [
+   -7.332,
+   -8.691,
+   -6.165
+  ],
+  "MPT+CAT-T vs MPT": [
+   0.554,
+   -0.308,
+   1.377
+  ],
+  "MPT+CURE10 vs MPT+CAT-T": [
+   -7.204,
+   -8.652,
+   -5.975
+  ],
+  "RA-LDL+CAT vs RA-LDL": [
+   0.853,
+   0.043,
+   1.683
+  ],
+  "RA-LDL+CURE10 vs RA-LDL+CAT": [
+   -8.738,
+   -10.268,
+   -7.219
+  ],
+  "RA-LDL+CAT-T vs RA-LDL": [
+   1.236,
+   0.395,
+   2.181
+  ],
+  "RA-LDL+CURE10 vs RA-LDL+CAT-T": [
+   -9.122,
+   -10.819,
+   -7.691
+  ],
+  "HCP+CAT vs HCP": [
+   1.577,
+   0.689,
+   2.401
+  ],
+  "HCP+CURE10 vs HCP+CAT": [
+   -7.801,
+   -9.246,
+   -6.557
+  ],
+  "HCP+CAT-T vs HCP": [
+   1.194,
+   0.282,
+   1.981
+  ],
+  "HCP+CURE10 vs HCP+CAT-T": [
+   -7.417,
+   -8.717,
+   -6.114
+  ],
+  "RCLP+CAT vs RCLP": [
+   1.236,
+   0.482,
+   2.153
+  ],
+  "RCLP+CURE10 vs RCLP+CAT": [
+   -8.781,
+   -10.352,
+   -7.397
+  ],
+  "RCLP+CAT-T vs RCLP": [
+   1.407,
+   0.47,
+   2.461
+  ],
+  "RCLP+CURE10 vs RCLP+CAT-T": [
+   -8.951,
+   -10.414,
+   -7.535
+  ],
+  "CRCL+CAT vs CRCL": [
+   1.918,
+   0.956,
+   2.827
+  ],
+  "CRCL+CURE10 vs CRCL+CAT": [
+   -7.289,
+   -8.804,
+   -5.852
+  ],
+  "CRCL+CAT-T vs CRCL": [
+   2.217,
+   1.088,
+   3.378
+  ],
+  "CRCL+CURE10 vs CRCL+CAT-T": [
+   -7.587,
+   -9.067,
+   -6.2
+  ],
+  "Joint+CAT vs Joint": [
+   0.597,
+   -0.221,
+   1.405
+  ],
+  "Joint+CURE10 vs Joint+CAT": [
+   -7.971,
+   -9.263,
+   -6.766
+  ],
+  "Joint+CAT-T vs Joint": [
+   0.853,
+   -0.152,
+   1.747
+  ],
+  "Joint+CURE10 vs Joint+CAT-T": [
+   -8.227,
+   -9.773,
+   -6.847
+  ]
+ },
+ "d_NFR-": {
+  "FT+CAT vs FT": [
+   -5.035,
+   -5.222,
+   -4.856
+  ],
+  "FT+CURE10 vs FT+CAT": [
+   19.882,
+   19.282,
+   20.49
+  ],
+  "FT+CAT-T vs FT": [
+   -5.184,
+   -5.379,
+   -5.006
+  ],
+  "FT+CURE10 vs FT+CAT-T": [
+   20.031,
+   19.424,
+   20.615
+  ],
+  "KD+CAT vs KD": [
+   -4.915,
+   -5.08,
+   -4.761
+  ],
+  "KD+CURE10 vs KD+CAT": [
+   12.663,
+   12.374,
+   12.957
+  ],
+  "KD+CAT-T vs KD": [
+   -4.996,
+   -5.17,
+   -4.848
+  ],
+  "KD+CURE10 vs KD+CAT-T": [
+   12.744,
+   12.45,
+   13.066
+  ],
+  "FD+CAT vs FD": [
+   -5.009,
+   -5.17,
+   -4.84
+  ],
+  "FD+CURE10 vs FD+CAT": [
+   14.004,
+   13.526,
+   14.414
+  ],
+  "FD+CAT-T vs FD": [
+   -5.121,
+   -5.298,
+   -4.946
+  ],
+  "FD+CURE10 vs FD+CAT-T": [
+   14.116,
+   13.638,
+   14.533
+  ],
+  "WiSE+CAT vs WiSE": [
+   -4.388,
+   -4.595,
+   -4.161
+  ],
+  "WiSE+CURE10 vs WiSE+CAT": [
+   3.835,
+   3.539,
+   4.089
+  ],
+  "WiSE+CAT-T vs WiSE": [
+   -4.476,
+   -4.699,
+   -4.248
+  ],
+  "WiSE+CURE10 vs WiSE+CAT-T": [
+   3.923,
+   3.628,
+   4.176
+  ],
+  "OE+CAT vs OE": [
+   -4.326,
+   -4.526,
+   -4.136
+  ],
+  "OE+CURE10 vs OE+CAT": [
+   2.269,
+   2.1,
+   2.45
+  ],
+  "OE+CAT-T vs OE": [
+   -4.453,
+   -4.658,
+   -4.256
+  ],
+  "OE+CURE10 vs OE+CAT-T": [
+   2.397,
+   2.225,
+   2.57
+  ],
+  "MPT+CAT vs MPT": [
+   -4.335,
+   -4.511,
+   -4.154
+  ],
+  "MPT+CURE10 vs MPT+CAT": [
+   10.214,
+   9.882,
+   10.516
+  ],
+  "MPT+CAT-T vs MPT": [
+   -4.411,
+   -4.612,
+   -4.225
+  ],
+  "MPT+CURE10 vs MPT+CAT-T": [
+   10.29,
+   9.966,
+   10.599
+  ],
+  "RA-LDL+CAT vs RA-LDL": [
+   -5.215,
+   -5.391,
+   -5.051
+  ],
+  "RA-LDL+CURE10 vs RA-LDL+CAT": [
+   8.626,
+   8.37,
+   8.911
+  ],
+  "RA-LDL+CAT-T vs RA-LDL": [
+   -5.308,
+   -5.497,
+   -5.146
+  ],
+  "RA-LDL+CURE10 vs RA-LDL+CAT-T": [
+   8.719,
+   8.442,
+   8.998
+  ],
+  "HCP+CAT vs HCP": [
+   -5.277,
+   -5.505,
+   -5.058
+  ],
+  "HCP+CURE10 vs HCP+CAT": [
+   11.015,
+   10.592,
+   11.437
+  ],
+  "HCP+CAT-T vs HCP": [
+   -5.423,
+   -5.663,
+   -5.183
+  ],
+  "HCP+CURE10 vs HCP+CAT-T": [
+   11.161,
+   10.724,
+   11.601
+  ],
+  "RCLP+CAT vs RCLP": [
+   -5.574,
+   -5.803,
+   -5.376
+  ],
+  "RCLP+CURE10 vs RCLP+CAT": [
+   14.127,
+   13.529,
+   14.678
+  ],
+  "RCLP+CAT-T vs RCLP": [
+   -5.723,
+   -5.957,
+   -5.494
+  ],
+  "RCLP+CURE10 vs RCLP+CAT-T": [
+   14.277,
+   13.672,
+   14.834
+  ],
+  "CRCL+CAT vs CRCL": [
+   -4.264,
+   -4.445,
+   -4.055
+  ],
+  "CRCL+CURE10 vs CRCL+CAT": [
+   3.96,
+   3.682,
+   4.225
+  ],
+  "CRCL+CAT-T vs CRCL": [
+   -4.403,
+   -4.61,
+   -4.193
+  ],
+  "CRCL+CURE10 vs CRCL+CAT-T": [
+   4.099,
+   3.806,
+   4.362
+  ],
+  "Joint+CAT vs Joint": [
+   -5.247,
+   -5.419,
+   -5.059
+  ],
+  "Joint+CURE10 vs Joint+CAT": [
+   12.473,
+   12.03,
+   12.911
+  ],
+  "Joint+CAT-T vs Joint": [
+   -5.308,
+   -5.488,
+   -5.129
+  ],
+  "Joint+CURE10 vs Joint+CAT-T": [
+   12.534,
+   12.09,
+   12.972
+  ]
+ },
+ "cat_fallback_classes_per_run": 3.6,
+ "cat_fallback_examples": {
+  "AH,CSC,GRT,MCA": 33,
+  "CRAO,CSC,MCA": 33,
+  "CRAO,CNV,MCA,RHL": 33,
+  "ODPM,MCA,RHL": 33,
+  "ODPM,GRT,MCA,ON": 33
+ }
+}
